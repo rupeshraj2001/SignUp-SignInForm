@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #223243;
+}
+
+.container {
+  padding: 40px;
+  border-radius: 20px;
+  border: 8px solid #223243;
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+    
+}
+
+.container .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.container .form.signin,
+.container.signinForm .form.signup {
+  display: none;
+}
+
+.container.signinForm .form.signin {
+  display: flex;
+}
+
+.container .form h2 {
+    font-family: verdana;
+    font-size: 3.5em;
+    font-weight: 500;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+.container .form .inputBox {
+  position: relative;
+  width: 300px;
+}
+
+.container .form .inputBox input {
+  padding: 12px 10px 12px 48px;
+  border: none;
+  width: 100%;
+  background: #223243;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-weight: 300;
+  border-radius: 25px;
+  font-size: 1em;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+  transition: 0.5s;
+  outline: none;
+}
+
+.container .form .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 12px 10px 12px 48px;
+  pointer-events: none;
+  font-size: 1em;
+  font-weight: 300;
+  transition: 0.5s;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.container .form .inputBox input:valid ~ span,
+.container .form .inputBox input:focus ~ span {
+  color: #00dfc4;
+  border: 1px solid #00dfc4;
+  background: #223243;
+  transform: translateX(25px) translateY(-7px);
+  font-size: 0.6em;
+  padding: 0 8px;
+  border-radius: 10px;
+  letter-spacing: 0.1em;
+}
+
+.container .form .inputBox input:valid,
+.container .form .inputBox input:focus {
+  border: 1px solid #00dfc4;
+}
+
+.container .form .inputBox i {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  width: 25px;
+  padding: 2px 0;
+  padding-right: 8px;
+  color: #00dfc4;
+  border-right: 1px solid #00dfc4;
+}
+
+
+
+
+.box{
+  padding: 12px 10px 12px 48px;
+  border: none;
+  width: 300px;
+  background: #223243;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-weight: 300;
+  border-radius: 25px;
+  font-size: 1em;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+  transition: 0.5s;
+  outline: none;
+}
+
+.btn-bubble {
+  color: white;
+  background: #223243;
+  background-repeat: no-repeat;
+}
+.btn-bubble:hover, .btn-bubble:focus {
+  -webkit-animation: bubbles 1s forwards ease-out;
+          animation: bubbles 1s forwards ease-out;
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) 96% 145% / 0.5em 0.5em, radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) 15% 95% / 0.61em 0.61em, radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) 43% 86% / 0.68em 0.68em, radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) 4% 129% / 1.08em 1.08em, radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) 83% 106% / 1.06em 1.06em, radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) 107% 92% / 0.93em 0.93em, radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) 69% 128% / 0.82em 0.82em, radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) 109% 119% / 1.19em 1.19em, radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) 55% 142% / 0.89em 0.89em, radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) 29% 141% / 0.88em 0.88em, radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) -10% 150% / 0.65em 0.65em;
+  background-color: #223243;
+  background-repeat: no-repeat;
+}
+@-webkit-keyframes bubbles {
+  100% {
+    background-position: 101% -116%, 18% -382%, 40% 17%, 12% -111%, 88% 24%, 102% -157%, 69% -264%, 115% 17%, 55% -325%, 31% -382%, -12% -245%;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes bubbles {
+  100% {
+    background-position: 101% -116%, 18% -382%, 40% 17%, 12% -111%, 88% 24%, 102% -157%, 69% -264%, 115% 17%, 55% -325%, 31% -382%, -12% -245%;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+  }
+}
+.btn19 a{
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  color: white;
+}
+
+.container .form p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.75em;
+  font-weight: 300;
+}
+
+.container .form p a {
+  font-weight: 500;
+  color: #fff;
+}
